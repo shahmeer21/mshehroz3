@@ -14,11 +14,10 @@ nav{
     position: fixed;
 }
 label.logo{
-    padding: 8px 110px;
-    position: fixed;
+    padding: 0px 110px;
     cursor: pointer;
 }
-#check-btn{
+.check-btn{
     float: right;
     line-height: 80px;
     color: #5E02BB;
@@ -29,27 +28,18 @@ label.logo{
 #check{
     display: none;
 }
-#check:checked ~ ul{
-    left: 0;
-}
 nav ul{
     float: right;
-    padding-right: 32px;
+    padding: 0 80px;
 }
 nav ul li{
     display: inline-block;
     line-height: 80px;
+    margin: 0 40px;
 }
 nav ul li a{
     font-size: 20px;
-    padding-right: 90px;
     color: #5E02BB;
-}
-a:active,a:hover{
-    background-color: #5E02BB;
-    transition: .5s;
-    color: #FFFFFF;
-    border-radius: 3px;
 }
 .container-1{
     background-color: #ffffff;
@@ -326,7 +316,7 @@ a:active,a:hover{
 .form .inputBox :hover{
     background-color: #FCF8FF;
     color: #5E02BB;
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
     border: 1px solid #5E02BB;
 }
 
@@ -383,8 +373,8 @@ a:active,a:hover{
     margin-top: 70px;
 }
 
-@media(max-width: 895px){
-    #check-btn{
+@media(max-width: 952px){
+    .check-btn{
         display: block;
         float: right;
         margin-left: 20px;
@@ -393,9 +383,14 @@ a:active,a:hover{
         width: 100%;
         height: 100vh;
         background-color: #5E02BB;
+        position: fixed;
         top: 80px;
         left: -100%;
-        transition: .5s;
+        text-align: center;
+        transition: .5s all ease;
+    }
+    #check:checked ~ ul{
+        left: 0;
     }
     nav ul li{
         display: block;
@@ -409,23 +404,9 @@ a:active,a:hover{
         margin: 5px 20px;
     }
 }
-@media(max-width: 690px){
-    #check-btn{
-        float: right;
-    }
-    label.logo{
-        float: left;
-    }
-}
 
-@media only screen and (max-width: 390px){
-    .container-6{
-        width: 100%;
-        background-color: #FCF8FF;
-    }
-    .container-6 .w-1{
-        margin: 0;
-        padding: 0;
-        
+@media(max-width: 460px){
+    nav ul li{
+        font-size: 16px;
     }
 }
