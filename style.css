@@ -25,6 +25,9 @@ section.bg-light{
 .navbar-light .navbar-toggler{
     border-color: #7700FF;
 }
+.mx-auto{
+  padding-left: 130px;
+}
 button:focus {
     outline: 1px dotted;
     outline: 5px auto #7700FF;
