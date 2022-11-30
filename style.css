@@ -26,7 +26,7 @@ section.bg-light{
     border-color: #7700FF;
 }
 .mx-auto{
-  padding-left: 130px;
+  padding-left: 130px !important;
 }
 button:focus {
     outline: 1px dotted;
